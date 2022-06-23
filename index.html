@@ -11,10 +11,10 @@
   </head>
   <body>
     <div class="h-screen flex items-center justify-center">
-      <div class="bg-white p-4 shadow-xl">
-        <div class="flex flex-col gap-3">
+      <div class="bg-white p-4 rounded shadow-xl">
+        <div class="flex flex-col gap-3 p-4">
           <button
-            class="background-transparent font-bold border border-1 border-slate-500 rounded shadow-md p-2 px-4 text-slate-500"
+            class="background-transparent font-semibold border border-1 border-slate-500 rounded shadow-md p-2 px-4 text-slate-500"
           >
             Login in Google
           </button>
@@ -24,30 +24,36 @@
           <form action="#" class="flex flex-col gap-4">
             <label
               for="email-input"
-              class="flex flex-col gap-1 font-bold text-black"
+              class="flex flex-col gap-1 font-semibold text-black"
               >Email
               <input
                 type="email"
+                required
                 id="email-input"
                 placeholder="Enter your email"
-                class="p-2 px-4 rounded background-transparent border shadow-md border-slate-500 text-slate-500 font-bold"
+                class="p-2 px-4 rounded background-transparent border shadow-md border-slate-500 text-slate-500 font-semibold"
               />
             </label>
             <label
               for="pass-input"
-              class="flex flex-col gap-1 font-bold text-black"
+              class="flex flex-col gap-1 font-semibold text-black"
               >Password
               <input
                 type="password"
+                required
                 id="pass-input"
                 placeholder="Password"
-                class="p-2 px-4 rounded background-transparent border shadow-md border-slate-500 text-slate-500 font-bold"
+                class="p-2 px-4 rounded background-transparent border shadow-md border-slate-500 text-slate-500 font-semibold"
               />
             </label>
-            <button class="bg-black rounded text-white p-2 px-4 font-bold">
+            <button class="bg-black rounded text-white p-2 px-4 font-semibold">
               Submit
             </button>
           </form>
+
+          <p class="font-semibold mt-5 text-black text-xsm">
+            Don't have an account? <a class="text-blue-500">Sign up</a>
+          </p>
         </div>
       </div>
     </div>
