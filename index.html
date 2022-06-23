@@ -12,14 +12,14 @@
   <body>
     <div class="h-screen flex items-center justify-center">
       <div class="bg-white p-4 rounded shadow-xl">
-        <div class="flex flex-col gap-3 p-4">
+        <div class="flex flex-col gap-2 p-4">
           <button
             class="background-transparent font-semibold border border-1 border-slate-300 rounded shadow p-2 px-4 text-slate-500"
           >
-            Login in Google
+            Login in with Google
           </button>
 
-          <p class="text-slate-500 text-center">or</p>
+          <p class="text-slate-500 text-center my-2">or</p>
 
           <form action="#" class="flex flex-col gap-4">
             <label
@@ -46,6 +46,12 @@
                 class="p-2 px-4 rounded background-transparent border shadow border-slate-300 text-slate-500 font-semibold"
               />
             </label>
+            <div class="flex gap-2 items-center">
+              <input class="w-4" type="checkbox" id="check-remember" />
+              <label for="check-remember" class="font-semibold text-slate-500"
+                >Remember me</label
+              >
+            </div>
             <button class="bg-black rounded text-white p-2 px-4 font-semibold">
               Submit
             </button>
